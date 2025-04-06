@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edutrip Taiwan Keelung</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #fef4f4, #f0f8ff);
+      text-align: center;
+      color: #555;
+      overflow-x: hidden;
+    }
+    header {
+      background: #ffb6c1;
+      color: white;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    header img {
+      width: 50px;
+      height: 50px;
+    }
+    .typewriter {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid white;
+      animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: white }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background: #ffdab9;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 2;
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.4);
+      transition: all 0.3s;
+    }
+
+    nav a:hover {
+      background: #ffd1dc;
+      transform: scale(1.1);
+    }
+
+    .container {
+      padding: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 1000px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      transform: translateY(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .animated {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    img {
+      width: 30%;
+      max-width: 300px;
+      height: auto;
+      margin: 10px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    /* Sakura Emoji */
+    .sakura-emoji {
+      position: fixed;
+      top: -50px;
+      font-size: 24px;
+      animation: emojiFall linear infinite;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.8;
+    }
+
+    @keyframes emojiFall {
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="Logo" />
+    <div class="typewriter">Edutrip Taiwan Keelung</div>
+  </header>
+
+  <nav>
+    <a href="#home" onclick="playSound(); showPage('home')">Home</a>
+    <a href="#agama" onclick="playSound(); showPage('agama')">Agama</a>
+    <a href="#pkn" onclick="playSound(); showPage('pkn')">PKn</a>
+    <a href="#indonesia" onclick="playSound(); showPage('indonesia')">Bahasa Indonesia</a>
+    <a href="#inggris" onclick="playSound(); showPage('inggris')">Bahasa English</a>
+    <a href="#ips" onclick="playSound(); showPage('ips')">IPS</a>
+    <a href="#mandarin" onclick="playSound(); showPage('mandarin')">Bahasa Mandarin</a>
+  </nav>
+
+  <div class="container" id="content">
+    <div id="home" class="card animated">
+      <h2>Selamat Datang di Edutrip!</h2>
+      <p>Edutrip adalah program pembelajaran yang memberikan pengalaman belajar di luar kelas. Berikut adalah tugas-tugas yang diberikan selama perjalanan ini.</p>
+
+      <h3>Tujuan Edutrip</h3>
+      <p>Edutrip tahun ini saya pergi ke Keelung</p>
+
+      <h3>Ekspektasi Edutrip</h3>
+      <p>Edutrip tahun ini saya ingin belajar tentang bahasa Mandarin</p>
+
+      <h3>Perlengkapan Edutrip</h3>
+      <p>Agar Edutrip berjalan lancar, saya harus membawa hp, baju, dan makanan</p>
+
+      <p><strong>Dibuat oleh Evelyn kelas 8C</strong></p>
+    </div>
+
+    <div id="agama" class="card animated" style="display:none;">
+      <h2>Tugas Agama</h2>
+      <img src="Copy of EVELYN GWYNETH HOE- FORMAT AP 2 AGAMA (EDUTRIP).docx_page-0001.jpg" alt="Tugas Agama">
+      <img src="hy.docx_page-0001.jpg" alt="Tugas Agama">
+      <img src="hys.docx_page-0001.jpg" alt="Tugas Agama">
+    </div>
+
+    <div id="pkn" class="card animated" style="display:none;">
+      <h2>Tugas PPKN</h2>
+      <img src="CHIANG KAI SHEK MEMORIAL HALL.jpg" alt="Tugas PKKN">
+      <img src="NATIONAL PALACE MUSEUM.jpg" alt="Tugas PPKN">
+    </div>
+
+    <div id="indonesia" class="card animated" style="display:none;">
+      <h2>Tugas Bahasa Indonesia</h2>
+      <img src="Hotel Fullon Taipei Penginapan mewah dengan Fasilitas Lengkap dan lokasi Strategis di Pusat kota.jpg" alt="Tugas Bahasa Indonesia">
+      <img src="BI.jpg" alt="Tugas Bahasa Indonesia">
+      <img src="bis.jpg" alt="Tugas Bahasa Indonesia">
+    </div>
+
+    <div id="inggris" class="card animated" style="display:none;">
+      <h2>Tugas Bahasa English</h2>
+      <img src="Papercraft Mindmap  Brainstorm (1).jpg" alt="Tugas Bahasa English">
+    </div>
+
+    <div id="ips" class="card animated" style="display:none;">
+      <h2>Tugas IPS</h2>
+      <img src="Rainbow vILLAGE.jpg" alt="Tugas IPS">
+    </div>
+
+    <div id="mandarin" class="card animated" style="display:none;">
+      <h2>Tugas Bahasa Mandarin</h2>
+      <img src="MANDARIN AP.jpg" alt="Tugas Bahasa Mandarin">
+    </div>
+  </div>
+
+  <!-- Audio Click -->
+  <audio id="clickSound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
+
+  <script>
+    function showPage(pageId) {
+      const pages = ['home', 'agama', 'pkn', 'indonesia', 'inggris', 'ips', 'mandarin'];
+      pages.forEach(page => {
+        document.getElementById(page).style.display = (page === pageId) ? 'block' : 'none';
+      });
+    }
+
+    function playSound() {
+      document.getElementById("clickSound").play();
+    }
+
+    function createEmojiSakura() {
+      const emoji = document.createElement("span");
+      emoji.innerText = "🌸";
+      emoji.classList.add("sakura-emoji");
+      emoji.style.left = Math.random() * window.innerWidth + "px";
+      emoji.style.fontSize = (Math.random() * 10 + 20) + "px";
+      emoji.style.animationDuration = (Math.random() * 3 + 4) + "s";
+      document.body.appendChild(emoji);
+      setTimeout(() => emoji.remove(), 5000);
+    }
+
+    setInterval(createEmojiSakura, 400);
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
